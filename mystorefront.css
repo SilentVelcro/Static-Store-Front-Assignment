@@ -1,0 +1,222 @@
+/*Common elements*/
+body {
+    font-size: 67.5%;
+    font-family:  Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    padding: 0px;
+    margin: 0;
+    background: #39150C url(img/bulletbackground.jpg) no-repeat fixed top center; 
+    -webkit-background-size: 100% 100%;
+     -moz-background-size: 100% 100%;
+     background-size: 100% 100%;
+     -o-background-size: 100% 100%;
+}
+
+h1 {
+    color:white;
+    font-size: 2.0em;
+    margin: 0.5em 0 0.5em 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin: 0px 0.5em 0.75em 0px;
+}
+ol {
+    font-size: 1.2em;
+    margin: 0 0 0 1.0em;
+    padding: 0 0 0 1.0em;
+}
+ol li {
+    margin: 0;
+    padding: 0 0 0.2em;
+}
+a, a:visited {
+    color: #0ad346b9;
+}
+a:hover {
+    color: #0ad346b9;
+}
+hr {
+    padding: 0;
+    margin: 1.5em 1.5em 0.75em 0.5em;
+}
+.contentWrapper {
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 0 3.0em;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+div.clear { 
+    clear:both;
+    font-size: 1%;
+}
+/*Header*/
+header {
+    padding: 2.5em 0 0.5em;
+    margin: 0 0 2.0em;
+    background: #000000  center 0px;
+}
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-size: 7em;
+    letter-spacing: -0.025em;
+    text-align: center;
+    margin: 0;    
+    text-shadow: 2px 3px 0 #0ad346b9;  
+}
+
+/*Nav Bars*/
+nav {
+    color: #000000;
+    font-size: 1.7em;
+    letter-spacing: 0.04em;
+    padding: 1.0em 1.0em .25em;
+    margin: .10em 0 ;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin: 0;
+}
+nav li a, nav li a:visited {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.3em 0.6em;
+}
+nav li a:hover {
+    color:  #0ad346b9;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+nav#utilityMenu {
+    float: right;
+    margin: -1.5em 0 0 0;
+    padding: 0.35em;
+    height: 1.3em;
+}
+nav#utilityMenu li {
+    padding: 0 0.25em 0 0.2em;
+    vertical-align: center;    
+}
+nav#utilityMenu ul li.acctNav a, nav#utilityMenu ul li.acctNav a:visited {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    height: 1.3em;
+    padding: 0.5em;
+    margin: -0.4em 0 0 0;
+    font-size: 0.8em;
+}
+nav#utilityMenu ul li.acctNav a.active {
+    background-color: #0ad346b9;
+}
+nav#utilityMenu ul li.acctNav a:hover {
+    background-color: rgba(252,251,243,0.7);
+    color:  #0ad346b9;
+}
+nav#utilityMenu li a, nav#utilityMenu li a:visited { padding: 0;}
+nav#utilityMenu ul li input#search 
+{
+    vertical-align: middle;
+    margin: 0 0 0 1.0em;
+}
+nav#utilityMenu ul li.acctNav::before, nav#utilityMenu ul li input#search::before 
+{
+    content: "| ";
+    color: #FCFBE6;
+}
+
+/*Main Section*/
+
+div#shotgunGallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section#main {
+    display:flex;
+    flex-direction: column;
+   }
+   section div.galleryTitle{
+       padding-left: 10px;
+       display: flex;
+    flex: 1;
+   }
+   section div.panel{
+       margin: 10px;
+       padding: 10px;
+       min-height: 650px;
+    display: inline-block;
+    max-width: 350px;
+    background-color: hsl(0, 0%, 100%);
+    border: rgb(0, 0, 0) solid 1px;
+    border-radius: 0.7em;
+   }
+   section div.panel img.gunType {
+       padding: 1em;
+   }
+   .button {
+    background-color: black;
+    border: none;
+    color: #0ad346b9;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px 16px;
+    opacity: 0.75;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .button:hover {opacity: 1}
+/*Footer*/
+footer {
+    background-color: #000000;
+    min-height: 100px;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    padding: 1.5em 2.0em;
+    margin: 0px;
+}
+footer ul#menuFooter {
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0 0.6em;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    padding: 0 0.7em 0 0;
+    margin: 0;
+}
+footer a, footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #0ad346b9;
+    text-decoration: underline;
+}
+.links{
+display: flex;
+justify-content: space-between;
+}
